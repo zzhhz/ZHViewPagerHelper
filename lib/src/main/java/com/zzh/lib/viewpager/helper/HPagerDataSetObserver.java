@@ -10,7 +10,7 @@ import java.lang.ref.WeakReference;
 /**
  * PagerAdapter数据集变化监听
  */
-public abstract class FPagerDataSetObserver extends FViewPagerHolder {
+public abstract class HPagerDataSetObserver extends HViewPagerHolder {
     private final InternalDataSetObserver mDataSetObserver = new InternalDataSetObserver();
 
     @Override
@@ -58,12 +58,12 @@ public abstract class FPagerDataSetObserver extends FViewPagerHolder {
 
         @Override
         public void onChanged() {
-            FPagerDataSetObserver.this.onDataSetChanged();
+            HPagerDataSetObserver.this.onDataSetChanged();
         }
 
         @Override
         public void onInvalidated() {
-            FPagerDataSetObserver.this.onInvalidated();
+            HPagerDataSetObserver.this.onInvalidated();
         }
     }
 

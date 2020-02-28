@@ -9,7 +9,7 @@ import java.lang.ref.WeakReference;
 /**
  * ViewPager持有类
  */
-public abstract class FViewPagerHolder {
+public abstract class HViewPagerHolder {
     private WeakReference<ViewPager> mViewPager;
 
     public final ViewPager getViewPager() {

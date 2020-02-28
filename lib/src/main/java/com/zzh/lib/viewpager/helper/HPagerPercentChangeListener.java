@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 /**
  * 页面滚动百分比监听
  */
-public abstract class FPagerPercentChangeListener extends FViewPagerHolder {
+public abstract class HPagerPercentChangeListener extends HViewPagerHolder {
     private int mScrollState = ViewPager.SCROLL_STATE_IDLE;
     private float mLastOffset = -1;
     private int mLastPosition = -1;

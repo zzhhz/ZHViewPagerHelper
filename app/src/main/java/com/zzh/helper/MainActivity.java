@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.zzh.lib.viewpager.helper.FPagerPercentChangeListener;
-import com.zzh.lib.viewpager.helper.FPagerSelectedChangeListener;
+import com.zzh.lib.viewpager.helper.HPagerPercentChangeListener;
+import com.zzh.lib.viewpager.helper.HPagerSelectedChangeListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 滚动百分比监听
      */
-    private FPagerPercentChangeListener mPagerPercentChangeListener = new FPagerPercentChangeListener() {
+    private HPagerPercentChangeListener mPagerPercentChangeListener = new HPagerPercentChangeListener() {
         @Override
         public void onShowPercent(int position, float showPercent, boolean isEnter, boolean isMoveLeft) {
             if (isEnter) {
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * 选中监听
      */
-    private FPagerSelectedChangeListener mPagerSelectedChangeListener = new FPagerSelectedChangeListener() {
+    private HPagerSelectedChangeListener mPagerSelectedChangeListener = new HPagerSelectedChangeListener() {
         @Override
         protected void onDataSetChanged() {
             final int count = getAdapterCount();

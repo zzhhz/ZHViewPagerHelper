@@ -11,7 +11,7 @@ import android.view.View;
 /**
  * ViewPager轮播类
  */
-public class FPagerPlayer extends FViewPagerHolder {
+public class HPagerPlayer extends HViewPagerHolder {
     /**
      * 默认轮播间隔
      */

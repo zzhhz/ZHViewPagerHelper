@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 /**
  * 选中非选中监听
  */
-public abstract class FPagerSelectedChangeListener extends FPagerDataSetObserver {
+public abstract class HPagerSelectedChangeListener extends HPagerDataSetObserver {
     private int mLastSelected;
 
     @Override
